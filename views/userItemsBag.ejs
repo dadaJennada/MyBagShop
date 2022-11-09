@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/userItemsBag.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div>
+            <div class="name">
+                <h2><span style="font-size:20px">Hello, </span><%=user.username%></h2>
+            </div>
+            <div class="container con1">
+
+            </div>
+        
+        </div>
+        <nav class="nv">
+        </nav>
+        <div class="items">
+            <h2 class="mybagText">
+                My Bag
+            </h2>
+            <div class="userItems">
+                
+                    <%for(let item of items){%>
+                        <div class="echItem" style="color:white;">
+                            <div class="remImg" style=width:50px;height:50px;margin-right:60px;background-color:black>
+                                <img id='<%=item._id%>' style='width:27px;height:27px' onclick="remItem(this.id)" src="/remove.png" alt="">
+                            </div>
+                            <div class="itmImg" style="margin-right:30px">
+                                <img style='width:193px;height:232px'src="<%=item.img%>" alt="">
+                            </div>
+                            <div class="nameBrnd" style="margin-right:167px">
+                                <h2><%=item.name%></h2>
+                                <h3>BY <%=item.manufracturer%></h3>
+                            </div>
+                            <div class="cost">
+                                <h3>@<%=item.price%></h3>
+                            </div>
+                        </div>
+
+                    <%}%>
+                
+            </div>
+        </div>
+        <div class="remShow canClass" id='remshow' style="width:600px;height:220px;background-color:white">
+            <div class="conRem">
+                <h3>CONFIRM REMOVE</h3>
+                <p>Do you really wish to remove this item from your bag ?</p>
+                <div class="remcan">
+                    <button class="btn btn-primary rembtn" onclick="remNoti(this.id)">REMOVE</button>
+                    <button class='btn' style="background-color:black;color:white" onclick="toCancel()">CANCEL</button>
+                </div>
+            </div>
+        </div>
+        <div class="navItems">
+            <div class="logout">
+                <a href="/logout" style="color:white" class="btn">Logout</a>
+            </div>
+            <div class="admImg">
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="admName">
+                <h3><%=user.username%></h3>
+            </div>
+            <a class="btn btnHome" href="/useradminItems" style="color:white" >HOME</a><br>
+            <div class="bagScr" style="display:flex;flex-direction:row;height:40px;align-items: center;">
+                <button class="btn btnAdd" style="padding:0px;margin-left:30px; ">MY BAG </button><%if(items.length>0){%>
+                    <div class="scr" style="margin-bottom:10px;text-align:center;width:25px;height:25px;border-radius:100%;background-color: orange;color:white;
+                display: flex;justify-content: center;align-items: start;align-self: start;">
+                    <p style="margin-bottom:10px;font-size: 17px;"><%=items.length%></p>
+                </div>
+                    <%}%>
+            </div>
+            <img class='navImg' src="/mybagshop-white.png" alt="">
+        </div>
+    </main>
+    <script>
+        function remItem(id){
+            const remcan = document.getElementById('remshow');
+            const rembtn = document.getElementsByClassName('rembtn');
+            rembtn[0].setAttribute('id',id);
+            remcan.classList.remove('canClass');
+            // document.location.href = '/remUserItem/'+id;
+        }
+        function toCancel(){
+            const remcan = document.getElementById('remshow');
+            remcan.classList.add('canClass');
+            // document.location.href = '/userbag';
+        }
+        function remNoti(id){
+            document.location.href='/remUserItem/'+id;
+        }
+    </script>
+</body>
+</html>

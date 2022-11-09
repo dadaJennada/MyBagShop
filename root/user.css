@@ -1,0 +1,201 @@
+body{
+    background-image: url('/admin.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+main{
+    display: flex;
+}
+
+.name{
+    margin-left: 20px;
+}
+.con1{
+    width: 1250px;
+    height: 1000px;
+    background-color: rgba(0,0,0,0.45);
+    border-radius: 0px 20px 0px 0px;
+    /* opacity: 0.60; */
+    position: relative;
+    /* backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px); */
+}
+
+/* .info{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 320px;
+    top:163px;
+    left:223px;
+    color:white;
+} */
+
+.nv{
+    width: 300px;
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 0px;
+    background-color: rgba(0,0,0,0.75);
+    /* opacity: 0.75; */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    position:relative;
+}
+
+
+
+.navItems{
+    /* position:absolute; */
+    /* right:60px; */
+    display: flex;
+    color:white;
+    flex-direction: column;
+    align-items:center;
+    align-content: end;
+    width:210px;
+    /* margin-left:390px */
+}
+.admImg{
+    width:100px;
+    height:100px;
+    background-color: white;
+    border-radius:100%;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.navItems button{
+    color:white;
+    font-size:large;
+}
+
+
+.btnHome{
+    margin-top: 93px;
+}
+
+.logout{
+    /* margin-right: 100px; */
+    /* position: absolute;
+    right: 27px; */
+    margin-left: 180px;
+    /* margin-right: 0px; */
+}
+
+.navImg{
+    width:183px;
+    height:135px;
+    margin-top: 404px;
+    margin-left:30px;
+}
+
+
+.card{
+    /* position:absolute;
+    top:150px;
+    left:28px; */
+    cursor: pointer;
+    display:flex;
+    /* justify-self: center; */
+    align-items: center;
+    width:260px;
+    height:370px;
+    background-color:black;
+    margin-left: 40px;
+    position: relative;
+    border-radius: 6px;
+    /* margin-left: 15px; */
+}
+
+.card img{
+    width:210px;
+    height:250px;
+    margin-top: 24px;
+    margin-bottom: 21px;
+    border-radius: 10px;
+    /* margin-left: 24px;
+    margin-top: 24px; */
+    /* padding: px; */
+}
+.manrat{
+    display:flex;
+    justify-content: space-between;
+    width:220px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.products{
+    /* position: absolute; */
+    top:130px;
+    left:10px;
+    width:1200px;
+    height:100%;
+}
+
+.men,.wmnProducts{
+    /* position: absolute;
+    top:130px;
+    left:10px;
+    width:1200px;
+    height:100%; */
+    display:flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+
+.women{
+    display: flex;
+    flex-direction: column;
+    margin-top:20px;
+    /* margin-left: 20px; */
+}
+
+.wmnText{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/* .wmnProducts{
+    display:flex;
+    flex-wrap: wrap;
+    
+} */
+
+.menText{
+    /* position:absolute; */
+    top: 27px;
+    left: 35px;
+}
+
+.price{
+    position: absolute;
+    width:90px;
+    height:45px;
+    top:240px;
+    left:14px;
+    background-color: black;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.nv{
+    margin-right: 0px;
+    width:300px;
+    /* margin-left: 140px; */
+}
+
+/* .men :hover{
+    background-color: #237DB6;
+}
+
+.itemName :hover{
+    background-color: none;
+} */
+
+.navItems :hover{
+    color:blue;
+    /* background-color: green; */
+}

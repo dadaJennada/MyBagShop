@@ -1,0 +1,158 @@
+body{
+    background-image: url('/consumer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main{
+    display: flex;
+}
+
+.name{
+    margin-left: 20px;
+}
+.con1{
+    width: 1150px;
+    height: 1000px;
+    /* background:black 0% 0% no-repeat padding-box; */
+    background-color: rgba(0,0,0,0.45);
+    border-radius: 0px 20px 0px 0px;
+    /* opacity: 0.60; */
+    position: relative;
+    padding: 30px;
+    /* backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px); */
+}
+
+
+.nv{
+    width: 300px;
+    height: 1024px;
+    margin-left: 33px;
+    background-color: rgba(0,0,0,0.75);
+    /* opacity: 0.75; */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+}
+
+
+.addText{
+    margin-top: 5px;
+}
+
+.navItems{
+    /* position:absolute; */
+    right:150px;
+    display: flex;
+    color:white;
+    flex-direction: column;
+    align-items:center;
+    align-content: end;
+    width:210px;
+    padding-right: 0px;
+}
+.admImg{
+    width:100px;
+    height:100px;
+    background-color: white;
+    border-radius:100%;
+    margin-top: 18px;
+    margin-bottom: 30px;
+}
+
+.navItems button{
+    color:white;
+    font-size:large;
+}
+
+.btnHome{
+    margin-top: 93px;
+}
+
+.logout{
+    align-self: flex-end;
+    /* margin-right: 100px; */
+    /* position: absolute;
+    right: 27px; */
+    /* margin-left: 320px; */
+}
+
+.navImg{
+    width:183px;
+    height:135px;
+    margin-top: 404px;
+    /* margin-left:180px; */
+}
+.content{
+    /* position:absolute; */
+    top:110px;
+    left:37px
+}
+.backText img{
+    width:32.5px;
+    height:26.5px;
+    align-items: center;
+}
+
+
+.backImg,.editImg,.delImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 100%;
+    width:50px;
+    height:50px;
+}
+
+.text{
+    color:white;
+}
+
+.backText{
+    display:flex;
+    width:300px;
+    justify-content: space-between;
+}
+
+.imgDetails{
+    display:flex;
+    width:960px;
+    justify-content: space-between;
+}
+
+.imgDetails img{
+    width:325px;
+    height:390px;
+}
+
+.nameEdit,.manfrcDelete{
+    display:flex;
+    width:600px;
+    justify-content: space-between;
+}
+.delImg img{
+    width:21px;
+    height:24px;
+    align-items: center;
+}
+.imgDetails,.about{
+    margin-left: 100px;
+}
+
+
+.delShow{
+    visibility: visible;
+}
+
+.bodyChange{
+    background: transparent;
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}
+
+
+.navItems :hover{
+    color:blue;
+    /* background-color: green; */
+}
